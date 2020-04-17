@@ -1,9 +1,8 @@
 "use strict"
 
-// const { commands } = require("./commands");
-require("./commands");
+const { commandsConfigs } = require("./commands");
 
-// console.log("11111111111111", commands)
+const config = {};
 
 const MST_COMMANDS = [];
 const DEV_COMMANDS = [];
@@ -14,6 +13,9 @@ const DEV_COMMANDS = [];
 function getCommandsName(commands) {
   return Object.keys(commands);
 }
+
+// TODO 分离函数
+function wait() {}
 
 module.exports = {
   MST_COMMANDS,
