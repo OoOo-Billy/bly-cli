@@ -1,0 +1,12 @@
+{
+  "type": "dev",
+  "template": "-$",
+  "commands": {
+    "v": {
+      "method": "getVersion"
+    },
+    "help": {
+      "method": "getHelp"
+    }
+  }
+}
