@@ -3,21 +3,27 @@
 const fs = require("fs");
 const Path = require("path");
 
-const commandsConfigs = [];
+function readCommandsSetting() {
+  const commandsConfigs = [];
 
-const files = fs.readdirSync(__dirname).filter(file => {
-  return Path.extname(file).toLowerCase() === '.json';
-});
+  const files = fs.readdirSync(__dirname).filter(file => {
+    return Path.extname(file).toLowerCase() === '.json';
+  });
 
-files.forEach(fileName => {
-  commandsConfigs.push(
-    JSON.parse(
-      fs.readFileSync(
-        Path.normalize(__dirname + "/" + fileName),
-        "utf-8"
+  files.forEach(fileName => {
+    commandsConfigs.push(
+      JSON.parse(
+        fs.readFileSync(
+          Path.normalize(__dirname + "/" + fileName),
+          "utf-8"
+        )
       )
-    )
-  );
-})
+    );
+  })
 
-exports.commandsConfigs = commandsConfigs;
+  return commandsConfigs;
+}
+
+const setting = readCommandsSetting();
+
+exports.commandConfigs = setting;

@@ -4,22 +4,22 @@
 
 const config = require("./config");
 
-const commandTypes = ["mst", "dev"];
+console.log("config", config);
 
-const MST_COMMANDS = config.MST_COMMANDS; // 辅助指令
-const DEV_COMMANDS = config.DEV_COMMANDS; // 开发指令
+// const MST_COMMANDS = config.MST_COMMANDS; // 辅助指令
+// const DEV_COMMANDS = config.DEV_COMMANDS; // 开发指令
 
-const version = require("./package.json").version;
+// const version = require("./package.json").version;
 
-const commands = process.argv.slice(2);
+// const commands = process.argv.slice(2);
 
-console.log("commands", commands);
+// console.log("commands", commands);
 
-function registerCommands(commands) {
+// function registerCommands(commands) {
 
-}
+// }
 
-function registerComFnGenerator(type) {
-  function registerCommandsFn() {}
-  return function() {}
-}
+// function registerComFnGenerator(type) {
+//   function registerCommandsFn() {}
+//   return function() {}
+// }

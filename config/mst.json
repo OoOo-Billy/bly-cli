@@ -5,7 +5,7 @@
     "v": {
       "method": "getVersion"
     },
-    "help": {
+    "h,help": {
       "method": "getHelp"
     }
   }

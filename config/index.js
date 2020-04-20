@@ -1,23 +1,41 @@
 "use strict"
 
-const { commandsConfigs } = require("./commands");
+const { commandConfigs } = require("./commands");
 
 const config = {};
 
-const MST_COMMANDS = [];
-const DEV_COMMANDS = [];
-// const MST_COMMANDS = getCommandsName(mst.commands);
-// const DEV_COMMANDS = getCommandsName(dev.commands);
+function commandConfigsGenerator() {
+  const configs = {};
 
-// 从指令json文件获取指令的名称集合
-function getCommandsName(commands) {
-  return Object.keys(commands);
+  for(let val of commandConfigs) {
+    // console.log("val", val);
+    const type = val.type.toUpperCase();
+    configs[type + "_TEMPLATE"] = val.template;
+    configs[type + "_COMMANDS"] = mapCommands(val.commands);
+  }
+
+  // 从指令json文件获取指令的名称集合
+  function mapCommands(commands) {
+    const commandMap = [];
+
+    for (let key in commands) {
+      key.split(",").forEach(k => {
+        commandMap.push(`${k}:${commands[key].method}`);
+      })
+    }
+
+    return commandMap
+  }
+
+  return configs;
 }
 
-// TODO 分离函数
-function wait() {}
+Object.assign(
+  config,
+  commandConfigsGenerator()
+);
+
 
 module.exports = {
-  MST_COMMANDS,
-  DEV_COMMANDS
+  ...config
 }
