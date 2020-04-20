@@ -1,8 +1,13 @@
 "use strict"
 
-const { commandConfigs } = require("./commands");
+const { commandConfigs } = require("./command");
 
 const config = {};
+
+function configVersion() {
+  const VERSION = require("../package.json").version;
+  return { VERSION };
+}
 
 function commandConfigsGenerator() {
   const configs = {};
@@ -32,7 +37,8 @@ function commandConfigsGenerator() {
 
 Object.assign(
   config,
-  commandConfigsGenerator()
+  commandConfigsGenerator(),
+  configVersion()
 );
 
 

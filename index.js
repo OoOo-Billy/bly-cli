@@ -2,14 +2,9 @@
 
 "use strict"
 
-const config = require("./config");
+const CONFIG = require("./config");
 
-console.log("config", config);
-
-// const MST_COMMANDS = config.MST_COMMANDS; // 辅助指令
-// const DEV_COMMANDS = config.DEV_COMMANDS; // 开发指令
-
-// const version = require("./package.json").version;
+console.log("config", CONFIG);
 
 // const commands = process.argv.slice(2);
 
@@ -18,6 +13,18 @@ console.log("config", config);
 // function registerCommands(commands) {
 
 // }
+
+function runCommand(command) {
+  // TODO
+}
+
+const METHODS = {
+  getVersion() {
+    console.log("v" + CONFIG.VERSION);
+    return CONFIG.VERSION;
+  }
+}
+
 
 // function registerComFnGenerator(type) {
 //   function registerCommandsFn() {}
