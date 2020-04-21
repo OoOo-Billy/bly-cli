@@ -41,7 +41,6 @@ Object.assign(
   configVersion()
 );
 
-
 module.exports = {
   ...config
 }
