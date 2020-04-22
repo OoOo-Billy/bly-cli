@@ -4,6 +4,9 @@
   "commands": {
     "run": {
       "method": "runScript"
+    },
+    "create": {
+      "method": "create"
     }
   }
 }
