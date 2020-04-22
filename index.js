@@ -33,18 +33,26 @@ function registerCommands(config) {
 function CommandRunner(map) {
 
   this.run = function(commandName) {
-
-    this[map[commandName[0]]](commandName.slice(1));
+    if(this.check(commandName)) {
+      this[map[commandName[0]]](commandName.slice(1));
+    }
   }
 
   this.getVersion = function() {
     console.log("v" + CONFIG.VERSION);
     return CONFIG.VERSION;
-  }
+  };
   this.getHelp = function(c) {
     console.log("no help", c);
-  }
+  };
   this.runScript = function(c) {
     console.log("running...", c);
+  };
+  this.check = function(commandName) {
+    if(!map[commandName[0]]) {
+      console.log("no command: " + commandName[0]);
+      return false;
+    }
+    return true;
   }
 }
