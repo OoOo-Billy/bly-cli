@@ -26,4 +26,4 @@ function readCommandsSetting() {
 
 const setting = readCommandsSetting();
 
-exports.commandConfigs = setting;
+module.exports = setting;

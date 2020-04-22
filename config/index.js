@@ -1,6 +1,6 @@
 "use strict"
 
-const { commandConfigs } = require("./command");
+const commandConfigs = require("./command");
 
 const config = {};
 
@@ -40,6 +40,4 @@ Object.assign(
   configVersion()
 );
 
-module.exports = {
-  ...config
-}
+module.exports = config
