@@ -6,31 +6,24 @@ const CONFIG = require("./config");
 const commander = require("./lib/commander");
 const actions = require("./lib");
 
-const commands = process.argv.slice(2);
-
+global.chalk = require('chalk');
+global.echo = function (...log) {
+  console.log(...log);
+}
 registerCommands(CONFIG);
 
-start();
-
-function start() {
-  if(!commands.length) return;
-  commander.run(commands);
-}
+commander.run(process.argv); // run command.
 
 function registerCommands(config) {
-  // const mapCommand = {};
-  for(let key in config) {
-    if(key.includes("COMMANDS")) {
+  for (let key in config) {
+    if (key.includes("COMMANDS")) {
       const pre = key.split("_")[0];
       config[key].forEach(i => {
         const c = i.split(":");
-        // mapCommand[config[pre + "_TEMPLATE"].replace("$", c[0])] = c[1];
         commander.register(config[pre + "_TEMPLATE"].replace("$", c[0]), actions[c[1]]);
       });
     }
   }
-
-  // return mapCommand;
 }
 
 
