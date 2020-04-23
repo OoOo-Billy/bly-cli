@@ -3,10 +3,12 @@
   "template": "-$",
   "commands": {
     "v": {
-      "method": "getVersion"
+      "method": "getVersion",
+      "description": "print bly-cli version."
     },
     "h,help": {
-      "method": "getHelp"
+      "method": "getHelp",
+      "description": "print all options."
     }
   }
 }
