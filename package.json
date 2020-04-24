@@ -12,6 +12,7 @@
   "author": "Billy",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^4.0.0"
+    "chalk": "^4.0.0",
+    "semver": "^7.3.2"
   }
 }
