@@ -2,10 +2,6 @@
   "type": "command",
   "template": "$",
   "commands": {
-    "run": {
-      "method": "runScript",
-      "description": "run your script."
-    },
     "create": {
       "method": "create",
       "description": "create a project template to help you rapid development."
