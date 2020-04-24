@@ -12,7 +12,7 @@ function configVersion() {
 function commandConfigsGenerator() {
   const configs = {};
 
-  for(let val of commandConfigs) {
+  for (let val of commandConfigs) {
     const type = val.type.toUpperCase();
     configs[type + "_TEMPLATE"] = val.template;
     configs[type + "_COMMANDS"] = mapCommands(val.commands);

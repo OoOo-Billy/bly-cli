@@ -25,6 +25,3 @@ function registerCommands(config) {
     }
   }
 }
-
-
-
