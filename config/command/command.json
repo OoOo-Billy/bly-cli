@@ -4,7 +4,8 @@
   "commands": {
     "create": {
       "method": "create",
-      "description": "create a project template to help you rapid development."
+      "description": "create a project template to help you rapid development.",
+      "option": "-typescript"
     }
   }
 }
