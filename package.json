@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "my cli tool",
   "bin": {
-    "bly": "./index.js"
+    "bly": "./bin/index.js"
   },
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.0.0",
+    "inquirer": "^7.1.0",
     "semver": "^7.3.2",
     "validate-npm-package-name": "^3.0.0"
   }

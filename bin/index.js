@@ -2,9 +2,9 @@
 
 "use strict"
 
-const CONFIG = require("./config");
-const commander = require("./lib/commander");
-const actions = require("./lib");
+const CONFIG = require("../config");
+const commander = require("../lib/commander");
+const actions = require("../lib");
 
 global.chalk = require('chalk');
 global.echo = function (...log) {
