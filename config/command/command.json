@@ -5,7 +5,7 @@
     "create": {
       "method": "create",
       "description": "create a project template to help you rapid development.",
-      "option": "-typescript"
+      "option": "-typescript,-vue,-react"
     }
   }
 }
