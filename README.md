@@ -8,9 +8,46 @@
 
 ---
 
-### 指令
+## 指令
 
 - [x] version
 - [x] help
 - [ ] create
 - [ ] serve
+
+## Install
+Use git:
+```
+git clone git@github.com:OoOo-Billy/bly-cli.git
+
+cd bly-cli
+
+npm install
+
+npm link
+
+bly -help
+```
+
+<!-- Use npm:
+```
+npm install -g bly-cli
+
+bly -help
+``` -->
+
+## Usage
+
+Create a project:
+```
+bly create <app-name> [options]
+```
+
+See help:
+```
+bly -help
+```
+<!-- Run a server for debugging your project:
+```
+bly serve
+``` -->
