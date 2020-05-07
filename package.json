@@ -1,7 +1,8 @@
 {
-  "name": "bly",
+  "name": "bly-cli",
   "version": "1.0.0",
   "description": "my cli tool",
+  "keywords": ["bly", "cli"],
   "bin": {
     "bly": "./bin/index.js"
   },
