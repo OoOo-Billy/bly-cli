@@ -2,7 +2,7 @@
   "type": "option",
   "template": "-$",
   "commands": {
-    "v": {
+    "v,version": {
       "method": "getVersion",
       "description": "print bly-cli version."
     },
