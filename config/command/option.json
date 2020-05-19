@@ -2,11 +2,11 @@
   "type": "option",
   "template": "-$",
   "commands": {
-    "v,version": {
+    "v,-version": {
       "method": "getVersion",
       "description": "print bly-cli version."
     },
-    "h,help": {
+    "h,-help": {
       "method": "getHelp",
       "description": "print all options."
     }
