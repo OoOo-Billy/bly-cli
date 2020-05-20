@@ -26,14 +26,14 @@ npm install
 
 npm link
 
-bly -help
+bly --help
 ```
 
 <!-- Use npm:
 ```
 npm install -g bly-cli
 
-bly -help
+bly --help
 ``` -->
 
 ## Usage
@@ -45,7 +45,7 @@ bly create <app-name> [options]
 
 See help:
 ```
-bly -help
+bly --help
 ```
 <!-- Run a server for debugging your project:
 ```
