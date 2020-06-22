@@ -1,14 +1,14 @@
 {
-  "type": "option",
-  "template": "-$",
-  "commands": {
-    "v,-version": {
-      "method": "getVersion",
-      "description": "print bly-cli version."
-    },
-    "h,-help": {
-      "method": "getHelp",
-      "description": "print all options."
-    }
-  }
+	"type": "option",
+	"template": "-$",
+	"commands": {
+		"v,-version": {
+			"method": "getVersion",
+			"description": "print bly-cli version."
+		},
+		"h,-help": {
+			"method": "getHelp",
+			"description": "print all options."
+		}
+	}
 }

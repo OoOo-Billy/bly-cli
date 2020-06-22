@@ -1,11 +1,11 @@
 {
-  "type": "command",
-  "template": "$",
-  "commands": {
-    "create": {
-      "method": "create",
-      "description": "create a project template to help you rapid development.",
-      "option": "-t,--typescript,-v,--vue,-r,--react"
-    }
-  }
+	"type": "command",
+	"template": "$",
+	"commands": {
+		"create": {
+			"method": "create",
+			"description": "create a project template to help you rapid development.",
+			"option": "-t,--typescript,-v,--vue,-r,--react"
+		}
+	}
 }
