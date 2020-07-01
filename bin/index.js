@@ -8,23 +8,23 @@ const actions = require('../lib')
 
 global.chalk = require('chalk')
 global.echo = function (...log) {
-	console.log(...log)
+  console.log(...log)
 }
 registerCommands(CONFIG)
 
 commander.run(process.argv) // run command.
 
 function registerCommands(config) {
-	for (let key in config) {
-		if (key.includes('COMMANDS')) {
-			const pre = key.split('_')[0]
-			config[key].forEach(i => {
-				const c = i.split(':')
-				commander.register(
-					config[pre + '_TEMPLATE'].replace('$', c[0]),
-					actions[c[1]]
-				)
-			})
-		}
-	}
+  for (let key in config) {
+    if (key.includes('COMMANDS')) {
+      const pre = key.split('_')[0]
+      config[key].forEach(i => {
+        const c = i.split(':')
+        commander.register(
+          config[pre + '_TEMPLATE'].replace('$', c[0]),
+          actions[c[1]]
+        )
+      })
+    }
+  }
 }

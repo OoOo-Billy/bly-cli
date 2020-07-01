@@ -1,22 +1,22 @@
 {
-	"name": "@bly/cli",
-	"version": "0.1.0",
-	"description": "🛠A CLI tool that integrate Vue & React and cull some of less common features.",
-	"keywords": [
-		"bly",
-		"cli"
-	],
-	"bin": {
-		"bly": "./bin/index.js"
-	},
-	"author": "Billy",
-	"license": "ISC",
-	"dependencies": {
-		"chalk": "^4.0.0",
-		"fs-extra": "^9.0.0",
-		"inquirer": "^7.1.0",
-		"ora": "^4.0.4",
-		"semver": "^7.3.2",
-		"validate-npm-package-name": "^3.0.0"
-	}
+  "name": "@bly/cli",
+  "version": "0.1.0",
+  "description": "🛠A CLI tool that integrate Vue & React and cull some of less common features.",
+  "keywords": [
+    "bly",
+    "cli"
+  ],
+  "bin": {
+    "bly": "./bin/index.js"
+  },
+  "author": "Billy",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "fs-extra": "^9.0.0",
+    "inquirer": "^7.1.0",
+    "ora": "^4.0.4",
+    "semver": "^7.3.2",
+    "validate-npm-package-name": "^3.0.0"
+  }
 }
