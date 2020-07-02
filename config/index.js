@@ -1,6 +1,7 @@
 'use strict'
 
 const commandConfigs = require('./command')
+const fs = require('fs')
 
 const config = {}
 
@@ -34,6 +35,12 @@ function commandConfigsGenerator() {
   return configs
 }
 
-Object.assign(config, commandConfigsGenerator(), configVersion())
+function debugMode() {
+  return {
+    isTestOrDebug: !!fs.existsSync('./TEST'),
+  }
+}
+
+Object.assign(config, commandConfigsGenerator(), configVersion(), debugMode())
 
 module.exports = config

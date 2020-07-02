@@ -10,6 +10,7 @@ global.chalk = require('chalk')
 global.echo = function (...log) {
   console.log(...log)
 }
+process.env.BLY_CLI_DEBUG = CONFIG.isTestOrDebug
 registerCommands(CONFIG)
 
 commander.run(process.argv) // run command.
