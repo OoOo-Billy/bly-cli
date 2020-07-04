@@ -10,7 +10,15 @@ global.chalk = require('chalk')
 global.echo = function (...log) {
   console.log(...log)
 }
-process.env.BLY_CLI_DEBUG = CONFIG.isTestOrDebug
+
+/**
+ * Assigning a property on process.env will implicitly convert the value to a string. This behavior
+ * is deprecated. Future versions of Node.js may throw an error when the value is not
+ * a string, number, or boolean.
+ * http://nodejs.cn/api/process.html#process_process_env
+ */
+process.env.BLY_CLI_DEBUG = CONFIG.isTestOrDebug ? 'yes' : 'no'
+
 registerCommands(CONFIG)
 
 commander.run(process.argv) // run command.
