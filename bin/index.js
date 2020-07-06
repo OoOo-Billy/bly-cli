@@ -17,7 +17,9 @@ global.echo = function (...log) {
  * a string, number, or boolean.
  * http://nodejs.cn/api/process.html#process_process_env
  */
-process.env.BLY_CLI_DEBUG = CONFIG.isTestOrDebug ? 'yes' : 'no'
+if (CONFIG.isTestOrDebug) {
+  process.env.BLY_CLI_DEBUG = true
+}
 
 registerCommands(CONFIG)
 
