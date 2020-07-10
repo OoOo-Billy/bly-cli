@@ -2,6 +2,7 @@
 
 const commandConfigs = require('./command')
 const fs = require('fs')
+const path = require('path')
 
 const config = {}
 
@@ -37,7 +38,7 @@ function commandConfigsGenerator() {
 
 function debugMode() {
   return {
-    isTestOrDebug: !!fs.existsSync('./TEST'),
+    isTestOrDebug: !!fs.existsSync(path.resolve(__dirname, './TEST')),
   }
 }
 
