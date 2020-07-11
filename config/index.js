@@ -38,7 +38,7 @@ function commandConfigsGenerator() {
 
 function debugMode() {
   return {
-    isTestOrDebug: !!fs.existsSync(path.resolve(__dirname, './TEST')),
+    isTestOrDebug: !!fs.existsSync(path.resolve(__dirname, './TEST'))
   }
 }
 
