@@ -8,10 +8,16 @@
         vue-cli documentation </a
       >.
     </p>
-    <h3>Installed CLI Plugins</h3>
+    <h3>Created by</h3>
     <ul>
       <li>
-        <a href="javascript:void 0;" target="_blank" rel="noopener">none</a>
+        <a
+          href="https://github.com/OoOo-Billy/bly-cli"
+          target="_blank"
+          rel="noopener"
+        >
+          Bly-cli
+        </a>
       </li>
     </ul>
     <h3>Essential Links</h3>
@@ -25,9 +31,9 @@
         </a>
       </li>
       <li>
-        <a href="https://chat.vuejs.org" target="_blank" rel="noopener"
-          >Community Chat</a
-        >
+        <a href="https://chat.vuejs.org" target="_blank" rel="noopener">
+          Community Chat
+        </a>
       </li>
       <li>
         <a href="https://twitter.com/vuejs" target="_blank" rel="noopener">
@@ -79,8 +85,8 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String,
-  },
+    msg: String
+  }
 }
 </script>
 
