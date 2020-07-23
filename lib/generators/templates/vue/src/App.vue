@@ -1,12 +1,38 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld msg="Welcome to Your Vue.js <% if (renderOptions.plugins.typescript) { _%>+ TypeScript <% } _%>App" />
   </div>
 </template>
 
+<%_ if (renderOptions.plugins.typescript) { _%>
+<script lang="ts">
+<%_ if (!renderOptions.classComponent) { _%>
+import Vue from 'vue';
+import HelloWorld from './components/HelloWorld.vue';
+
+export default Vue.extend({
+  name: 'App',
+  components: {
+    HelloWorld
+  }
+});
+<%_ } else { _%>
+import { Component, Vue } from 'vue-property-decorator';
+import HelloWorld from './components/HelloWorld.vue';
+
+@Component({
+  components: {
+    HelloWorld,
+  },
+})
+export default class App extends Vue {}
+<%_ } _%>
+</script>
+<%_ } else { _%>
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+
 export default {
   name: 'App',
   components: {
@@ -14,6 +40,7 @@ export default {
   }
 }
 </script>
+<%_ } _%>
 
 <%_ if (renderOptions.cssPreprocessor !== 'stylus') { _%>
 <style<%-

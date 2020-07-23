@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "<%- renderOptions.useTsWithBabel ? 'esnext' : 'es5' %>",
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
+    <%_ if (renderOptions.classComponent) { _%>
+    "experimentalDecorators": true,
+    <%_ } _%>
     "allowJs": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
