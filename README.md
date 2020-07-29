@@ -1,6 +1,7 @@
 # bly-cli 正确食用方式
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![MIT](https://img.shields.io/badge/license-MIT-000000.svg)](https://github.com/vuejs/vue-cli/blob/dev/LICENSE)
 
 > Author: @OoOo-Billy.
 >
