@@ -15,8 +15,10 @@
 
 - [x] version
 - [x] help
-- [ ] create
-- [ ] typescript support
+- [x] create (vue)
+- [x] typescript support (vue)
+- [ ] create (react)
+- [ ] typescript support (react)
 
 ## Install
 
