@@ -3,7 +3,7 @@
 'use strict'
 
 const CONFIG = require('../config')
-const commander = require('../lib/commander')
+const CommandRunner = require('../lib/CommandRunner')
 const actions = require('../lib')
 
 global.chalk = require('chalk')
@@ -20,6 +20,8 @@ global.echo = function (...log) {
 if (CONFIG.isTestOrDebug) {
   process.env.BLY_CLI_DEBUG = true
 }
+
+const commander = new CommandRunner()
 
 ;(function registerCommands(config) {
   for (let key in config) {
