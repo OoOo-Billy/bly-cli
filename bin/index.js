@@ -21,11 +21,7 @@ if (CONFIG.isTestOrDebug) {
   process.env.BLY_CLI_DEBUG = true
 }
 
-registerCommands(CONFIG)
-
-commander.run(process.argv) // run command.
-
-function registerCommands(config) {
+;(function registerCommands(config) {
   for (let key in config) {
     if (key.includes('COMMANDS')) {
       const pre = key.split('_')[0]
@@ -38,4 +34,7 @@ function registerCommands(config) {
       })
     }
   }
-}
+})(CONFIG)
+
+// Run command.
+commander.run(process.argv)
