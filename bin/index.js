@@ -29,10 +29,7 @@ const commander = new CommandRunner()
       const pre = key.split('_')[0]
       config[key].forEach(i => {
         const c = i.split(':')
-        commander.register(
-          config[pre + '_TEMPLATE'].replace('$', c[0]),
-          actions[c[1]]
-        )
+        commander.register(config[pre + '_TEMPLATE'].replace('$', c[0]), actions[c[1]])
       })
     }
   }

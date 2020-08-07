@@ -12,9 +12,7 @@ function readCommandsSetting() {
 
   files.forEach(fileName => {
     commandsConfigs.push(
-      JSON.parse(
-        fs.readFileSync(Path.normalize(__dirname + '/' + fileName), 'utf-8')
-      )
+      JSON.parse(fs.readFileSync(Path.normalize(__dirname + '/' + fileName), 'utf-8'))
     )
   })
 
