@@ -1,1 +1,8 @@
+# IDE
+.DS_Store
+.idea
+
+# local
 node_modules
+dist
+*.local
