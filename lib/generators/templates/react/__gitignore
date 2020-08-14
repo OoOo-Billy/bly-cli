@@ -6,6 +6,7 @@
 # local
 node_modules
 dist
+/build
 *.local
 
 npm-debug.log*
