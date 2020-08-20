@@ -6,6 +6,10 @@
     "bly",
     "cli"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OoOo-Billy/bly-cli.git"
+  },
   "bin": {
     "bly": "./bin/index.js"
   },
