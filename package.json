@@ -1,5 +1,5 @@
 {
-  "name": "@bly/cli",
+  "name": "@OoOo-Billy/bly-cli",
   "version": "0.1.0",
   "description": "🛠A CLI tool that integrate Vue & React and cull some of less common features.",
   "keywords": [
@@ -9,6 +9,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OoOo-Billy/bly-cli.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "bin": {
     "bly": "./bin/index.js"
