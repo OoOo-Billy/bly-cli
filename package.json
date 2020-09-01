@@ -1,6 +1,6 @@
 {
   "name": "@oooo-billy/bly-cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "🛠A CLI tool that integrate Vue & React and cull some of less common features.",
   "keywords": [
     "bly",
