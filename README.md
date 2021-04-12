@@ -1,7 +1,7 @@
-# bly-cli 正确食用方式
+# bly-cli
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![MIT](https://img.shields.io/badge/license-MIT-000000.svg)](https://github.com/vuejs/vue-cli/blob/dev/LICENSE)
+[![MIT](https://img.shields.io/badge/license-MIT-000000.svg)](https://github.com/OoOo-Billy/bly-cli/blob/develop/LICENSE)
 
 > Author: @OoOo-Billy.
 >
@@ -13,12 +13,8 @@
 
 ## TODO
 
-- [x] version
-- [x] help
-- [x] Create (vue)
-- [x] Typescript support (vue)
-- [x] Create (react)
-- [x] Typescript support (react)
+- [x] Create project
+- [x] Typescript support
 - [ ] Vite support
 
 ## Install
