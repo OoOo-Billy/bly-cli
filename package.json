@@ -1,14 +1,29 @@
 {
-  "name": "bly",
-  "version": "1.0.0",
-  "description": "my cli tool",
-  "bin": {
-    "bly": "./index.js"
+  "name": "@oooo-billy/bly-cli",
+  "version": "0.2.0",
+  "description": "🛠A CLI tool that integrate Vue & React and cull some of less common features.",
+  "keywords": [
+    "bly",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OoOo-Billy/bly-cli.git"
   },
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "bin": {
+    "bly": "./bin/index.js"
   },
   "author": "Billy",
-  "license": "ISC"
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "ejs": "^3.1.3",
+    "fs-extra": "^9.0.0",
+    "inquirer": "^7.1.0",
+    "ora": "^4.0.4",
+    "semver": "^7.3.2",
+    "validate-npm-package-name": "^3.0.0"
+  }
 }

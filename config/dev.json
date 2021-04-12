@@ -1,9 +1,0 @@
-{
-  "type": "dev",
-  "template": "$",
-  "commands": {
-    "run": {
-      "method": "run"
-    }
-  }
-}

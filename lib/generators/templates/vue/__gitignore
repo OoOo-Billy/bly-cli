@@ -1,0 +1,13 @@
+# IDE
+.DS_Store
+.idea
+.vscode/
+
+# local
+node_modules
+dist
+*.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
